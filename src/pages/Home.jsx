@@ -1,8 +1,13 @@
 import React from 'react'
 
+{/* <div className='absolute top-28 left-0 z-10 flex items-center justify-center'>
+  POPUP
+</div> */}
 function Home() {
   return (
-    <div>Home</div>
+    <section className='w-full h-screen relative'>
+      
+    </section>
   )
 }
 
