@@ -4,6 +4,8 @@ import { Suspense } from 'react'
 import Loader from '../components/Loader'
 import Island from '../models/island'
 import Sky from '../models/sky'
+import Plane from '../models/Plane'
+import Bird from '../models/Bird'
 
 {/* <div className='absolute top-28 left-0 z-10 flex items-center justify-center'>
   POPUP
@@ -31,12 +33,14 @@ function Home() {
           {/* <pointLight position={[10, 10, 10]} /> */}
           {/* <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} /> */}
           <hemisphereLight skyColor={'#b1e1ff'} groundColor={'#ffffff'} intensity={1} />
+          <Bird/>
           <Sky/>
           <Island 
           position={screenPosition} 
           scale={sreenScalle} 
           rotation={rotation}
           />
+          <Plane/>
         </Suspense>
       </Canvas>
     </section>
